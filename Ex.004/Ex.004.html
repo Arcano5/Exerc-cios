@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <script src="Ex.004.js"></script>
+    <link rel="stylesheet" href="Ex.004.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora do Indíce de Massa Corporal</h1>
+    </header>
+    <main>
+    <label for="altura">Altura (m): </label>
+    <input type="number" id="altura">
+
+    <label for="massa">Massa(kg): </label>
+    <input type="number" id="massa">
+    
+    <p id="resultado"></p>
+
+    <button onclick="calcularMassa()">Calcular</button>
+    </main>
+    <section>
+        <article>
+            <ul> Indíces
+                <li>
+                    Baixo Peso: IMC < 18,5 
+                </li>
+                <li>
+                    Peso Normal: 18,5 < IMC < 24,9
+                </li>
+                <li>
+                    Excesso de Peso: 25 < IMC < 29,9
+                </li>
+                <li>
+                    Obesidade: IMC > 30
+                </li>
+                <li>
+                    Obesidade Extrema: IMC > 35
+                </li>
+            </ul>
+        </article>
+    </section>
+    <footer>
+        Para mais informações consulte o médico mais próximo!<br>
+        &copy; 2025 Todos os direitos reservados
+    </footer>
+</body>
+</html>
