@@ -1,0 +1,14 @@
+{define objetos}
+[define arrays]
+Pares chave-valor (ex: "nome": "João")
+Tipos de dados suportados: strings, números, booleanos, objetos, arrays, null.
+
+const jsonPessoa = '{"nome": "Maria", "idade":30, }'
+json.parse(): converte uma string json em um objeto javascript
+json.stringify(): converter um objeto javascript em uma string json
+sintaxe básica (get)
+estrutura do fetch():
+fetch(url):
+    .then(resposta=> resposta.json())
+    .then(dados=> console.log(dados))
+    .catch(erro=> console.error(erro));
