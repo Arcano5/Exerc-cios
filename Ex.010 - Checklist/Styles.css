@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align:center;
+  margin: 2em;
+  background-color: #f0f0f0;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+input {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+button:hover{
+  background-color: orange;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
