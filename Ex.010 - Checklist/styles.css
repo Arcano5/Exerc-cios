@@ -1,3 +1,6 @@
+header{
+  background-color: #971312;
+}
 body {
   font-family: Arial, sans-serif;
   text-align:center;
@@ -15,6 +18,7 @@ input {
 }
 
 button {
+  margin-top:15px;
   padding: 0.5em 1em;
   cursor: pointer;
 }
@@ -35,4 +39,15 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#resultado {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.erro {
+  border: 2px solid red;
+  background-color: #ffe6e6;
 }

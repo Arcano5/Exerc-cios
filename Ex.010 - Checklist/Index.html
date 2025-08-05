@@ -3,46 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Caro Professor, propôs um desafio a mim mesmo, o objetivo dessa página é ser um
-    checklist veicular, para que as pessoas dirijam equipamentos no melhor estado
-    possível-->
-    <title>Automecânica.</title>
-    <link rel="stylesheet" href="Styles.css">
+    <title>Checklist Veicular</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header><h1>Checklist veicular</h1></header>
+    <header>
+        <h1>Checklist Veicular</h1>
+    </header>
     <main>
-        <label>Pneus estão calibrados?</label><br>
-        <input type="radio" name="pneusCalibrados" value="true" id="pneusSim" required>
-        <label for="pneusSim">Sim</label>
+        <form id="checklistForm">
+            <fieldset>
+                <legend>Pneus estão calibrados?</legend>
+                <input type="radio" name="pneusCalibrados" value="true" id="pneusSim" required>
+                <label for="pneusSim">Sim</label>
 
-        <input type="radio" name="pneusCalibrados" value="false" id="pneusNao">
-        <label for="pneusNao">Não</label>
-        <br>
+                <input type="radio" name="pneusCalibrados" value="false" id="pneusNao">
+                <label for="pneusNao">Não</label>
+            </fieldset>
 
-        <label>Luzes estão funcionando?</label><br>
-        <input type="radio" name="luzFuncionando" value="true" id="luzSim" required>
-        <label for="luzSim">Sim</label>
+            <fieldset>
+                <legend>Luzes estão funcionando?</legend>
+                <input type="radio" name="luzFuncionando" value="true" id="luzSim" required>
+                <label for="luzSim">Sim</label>
 
-        <input type="radio" name="luzFuncionando" value="false" id="luzNao">
-        <label for="luzNao">Não</label><br>
+                <input type="radio" name="luzFuncionando" value="false" id="luzNao">
+                <label for="luzNao">Não</label>
+            </fieldset>
 
-        <label>Óleo e Água verificados?</label><br>
-        <input type="radio" name="oaVerificados" value="true" id="oaSim" required>
-        <label for="oaSim">Sim</label>
+            <fieldset>
+                <legend>Óleo e água verificados?</legend>
+                <input type="radio" name="oaVerificados" value="true" id="oaSim" required>
+                <label for="oaSim">Sim</label>
 
-        <input type="radio" name="oaVerificados" value="false" id="oaNao">
-        <label for="oaNao">Não</label><br>
+                <input type="radio" name="oaVerificados" value="false" id="oaNao">
+                <label for="oaNao">Não</label>
+            </fieldset>
 
-        <label>Documentos do veículo em dia?</label><br>
-        <input type="radio" name="docVerificado" value="true" id="docSim" required>
-        <label for="docSim">Sim</label>
+            <fieldset>
+                <legend>Documentos do veículo em dia?</legend>
+                <input type="radio" name="docVerificado" value="true" id="docSim" required>
+                <label for="docSim">Sim</label>
 
-        <input type="radio" name="docVerificado" value="false" id="docNao">
-        <label for="docNao">Não</label><br>
+                <input type="radio" name="docVerificado" value="false" id="docNao">
+                <label for="docNao">Não</label>
+            </fieldset>
 
-        <button onclick="Verificar">Verificar</button>
+            <button type="button" id="btnVerificar">Verificar</button>
+        </form>
+        <div id="resultado"></div>
+
     </main>
-    <script src="Ex.010 - Checklist/js/app.js"></script>
+
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
