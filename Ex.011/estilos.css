@@ -1,0 +1,105 @@
+/*Reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/*Cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2 rem;
+    background: #222;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5 rem;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left:1.5rem;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+/*Banner*/
+.banner{
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+/*Seções*/
+section{
+    padding: 2rem;
+}
+h2{
+    margin-bottom: 1rem;
+}
+.grid-servicos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.servico{
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+/*Depoimentos*/
+blockquote{
+    font-style: italic;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #ccc;
+}
+/*Formulário*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+}
+input, textarea{
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+button{
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 0.8 rem;
+    cursor: pointer;
+}
+button:hover{
+    background: #444;
+}
+/*footer*/
+footer{
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+}
+/*Responsividade*/
+@media (max-width:768px){
+    nav ul{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
