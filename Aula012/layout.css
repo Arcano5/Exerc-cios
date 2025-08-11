@@ -1,0 +1,38 @@
+*{margin: 0; padding:0;}
+
+body{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+.container{
+    display: grid;;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+    min-height: 100vh;
+}
+
+main{
+    grid-area: main;
+    text-align: left;
+    padding: 20px;
+}
+header{
+    grid-area: header;
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    grid-area: sidebar;
+}
+footer{
+    grid-area: footer;
+    background: lightyellow;
+    text-align: center;
+}
