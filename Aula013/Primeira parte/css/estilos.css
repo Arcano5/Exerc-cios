@@ -1,0 +1,24 @@
+.cabecalho {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+}
+.cabecalho__titulo {
+  text-align: center;
+}
+
+.conteudo {
+  padding: 20px;
+}
+.conteudo__paragrafo {
+  font-size: 18px;
+}
+.conteudo__link {
+  color: #007bff;
+  text-decoration: none;
+}
+.conteudo:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,59 @@
+@use 'variaveis' as *;
+
+/*Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Corpo da página */
+body{
+    font-family: $font-principal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $cor-dark;
+    background-color: $cor-bg-light;
+}
+/*Links */
+a{
+    color: $cor-primaria;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover{
+        color: $cor-primaria-light;
+        text-decoration: underline;
+    }
+}
+
+/*Titulos */
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    margin-bottom: $espacamento/2;
+    color: $cor-primaria;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+/*Parágrafos */
+p{
+    margin-bottom: $espacamento;
+    color: $cor-dark;
+}
+/*Classes utilitárias */
+
+.section-title{
+    text-align: center;
+    margin-bottom: $espacamento;
+}
+.section-text{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto $espacamento auto;
+}

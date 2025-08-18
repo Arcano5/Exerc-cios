@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/*Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Corpo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/*Links */
+a {
+  color: #971312;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+/*Titulos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #971312;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/*Parágrafos */
+p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/*Classes utilitárias */
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+/* 1. Responsividade */
+/* 2. Centralizar flexível (bem útil para header, footer, banners, etc.) */
+/* 3. Botão padrão */
+/*(estrutura geral da página)*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*cabeçalho*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #971312;
+  color: #fff;
+}
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header__menu {
+  background-color: #fff;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .header__menu {
+    flex-direction: column;
+  }
+}
+.header__item .header__link {
+  color: #444;
+  font-weight: 500;
+}
+.header__item .header__link:hover {
+  text-decoration: underline;
+}
+
+/*responsividade*/
+@media (max-width: 768px) {
+  .header__menu {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+.contact__button {
+  background-color: #971312;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact__button:hover {
+  background-color: #444;
+}
+
+.contact__button--secundario {
+  background-color: #fff;
+  color: #971312;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #971312;
+}
+.contact__button--secundario:hover {
+  background-color: #444;
+}
+
+/* Inputs e textarea */
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #971312;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.contact__input:focus,
+.contact__textarea:focus {
+  outline: none;
+  border-color: #444;
+}
+
+/* Cards de serviço */
+.services__item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.services__item:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials */
+.testimonials__quote {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+.footer__text {
+  margin: 0;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,65 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.contact__button {
+  @include botao();
+}
+
+.contact__button--secundario {
+  @include botao($cor-light, $cor-primaria);
+  border: 1px solid $cor-primaria;
+}
+
+
+/* Inputs e textarea */
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: $espacamento / 2;
+  margin-bottom: $espacamento;
+  border: 1px solid $cor-primaria;
+  border-radius: 5px;
+  font-family: $font-principal;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+    border-color: $cor-primaria-light;
+  }
+}
+
+/* Cards de serviço */
+.services__item {
+  background-color: $cor-light;
+  border-radius: 8px;
+  padding: $espacamento;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* Testimonials */
+.testimonials__quote {
+  background-color: $cor-primaria-light;
+  color: $cor-light;
+  padding: $espacamento;
+  border-radius: 8px;
+  margin-bottom: $espacamento;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background-color: $cor-dark;
+  color: $cor-light;
+  padding: $espacamento * 2;
+  text-align: center;
+
+  &__text {
+    margin: 0;
+  }
+}
