@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilo Livre</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  .card-img-top {
+  width: 100%;        /* ocupa toda a largura do card */
+  height: 200px;      /* altura fixa igual para todas */
+  object-fit: cover;  /* mantém a proporção, cortando o excesso */
+}
+</style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="text-center bg-dark bg-gradient text-white py-5">
+    <div class="container">
+      <h1 class="fw-bold">Barbearia - Estilo Livre</h1>
+      <img src="imagens/Logo.png" alt="Logo Estilo Livre" width="100" height="100" class="mt-3">
+    </div>
+  </header>
+
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Barbearia - Estilo Livre</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Busca..." aria-label="Busca">
+        <button class="btn btn-outline-success" type="submit">Busca</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Seções com Cards -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="imagens/Icone2.jpg" class="card-img-top" alt="Home">
+            <div class="card-body text-center">
+              <p class="fw-bold">Home</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="imagens/Corte.jpg" class="card-img-top" alt="Sobre Nós">
+            <div class="card-body text-center">
+              <p class="fw-bold">Sobre Nós</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="imagens/Fundo.jpg" class="card-img-top" alt="Serviços">
+            <div class="card-body text-center">
+              <p class="fw-bold">Serviços</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="imagens/Maquininha.jpg" class="card-img-top" alt="Depoimentos">
+            <div class="card-body text-center">
+              <p class="fw-bold">Depoimentos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Garanta sua vaga</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nomeCompleto" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="nomeCompleto" required>
+        </div>
+        <div class="mb-3">
+          <label for="servico" class="form-label">Serviço</label>
+          <select class="form-select" id="servico" required>
+            <option selected disabled>Selecione...</option>
+            <option>Cortes</option>
+            <option>Pigmentação</option>
+            <option>Barba</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Agendar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Todos os direitos reservados.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

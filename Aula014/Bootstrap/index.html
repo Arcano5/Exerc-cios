@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="text-center text-bg-info">Título</h1>
+    <p class="text-danger">Elementos priincipais</p>
+    <p>container: Define a área centralizada e com margem nas laterais</p>
+    <p>row: Define uma linha para agrupar colunas</p>
+    <p>col: Define a divisão do conteúdo em colunas</p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Coluna 1
+            </div>
+            <div class="col">
+                Coluna 2
+            </div>
+        </div>
+    </div>
+    <p>Como definir quantidade de colunas virtuais que cada coluna ocupará?</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                Conteúdo Maior
+            </div>
+            <div class="col-4">
+                Conteúdo Menor
+            </div>
+        </div>
+    </div>
+    <p>E se eu quiser que a quantidade de colunas virtuais sejam diferentes de acordo com o tamanho da tela?</p>
+    <p>Prefixo -> tamanho da tela</p>
+    <p>col-sm >= 576px</p>
+    <p>col-md >= 768px</p>
+    <p>col-lg >= 992px</p>
+    <p>col-xl >= 1200px</p>
+    <p>col-xxl >= 1400px</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                Metade na tela média pra cima
+            </div>
+            <div class="col-12 col-md-6">
+                Outra metade
+            </div>
+        </div>
+    </div>
+    <p>
+        Componentes Pré-Construidos do bootstrap <br>
+        Os compontentes sao elementos prontos de interface <br>
+        São responsivos, flexiveis e faceis de personalizar <br>
+        Exemplos: Botões, Alertas, Formulários, Cards, <br>
+        Navegação, Modal, Carousel e etc.
+    </p>
+    <button class="btn btn-primary">primeiro</button><br>
+    <button class="btn btn-secondary">Segundo</button><br>
+    <button class="btn btn-success">Sucesso</button><br>
+    <button class="btn btn-danger">Danger</button><br>
+    <button class="btn btn-warning">Warning</button><br>
+    <button class="btn btn-info">Info</button><br>
+    <button class="btn btn-light">Light</button><br>
+    <button class="btn btn-dark">Dark</button><br>
+    <button class="btn btn-link">Link</button>
+    <div class="alert alert-success" role="alert">
+        Operação realizada com sucesso!
+    </div>
+        <div class="alert alert-primary" role="alert">
+        Operação realizada primerio!
+    </div>
+        <div class="alert alert-secondary" role="alert">
+        Operação realizada segundo!
+    </div>
+        <div class="alert alert-danger" role="alert">
+        Operação realizada com perigo!
+    </div>
+        <div class="alert alert-warning" role="alert">
+        Operação realizada com warning!
+    </div>
+        <div class="alert alert-info" role="alert">
+        Operação realizada com info!
+    </div>
+        <div class="alert alert-light" role="alert">
+        Operação realizada com luz!
+    </div>
+        <div class="alert alert-dark" role="alert">
+        Operação realizada com escuridao!
+    </div>
+    <div class="card">
+        <img src="imagem.jpg" class="card-img-top" alt="Imagem">
+        <div class="card-body">
+            <h5 class="card-title">Título do Card</h5>
+            <p class="card-text">Descrição do conteúdo do card</p>
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+        </div>
+    </div>
+    <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </nav>
+    <p>
+        Mais opções<br>
+        Badges (indicadores)<br>
+        Breadcrumb (navegação de página)<br>
+        Carousel (slide de imagens)<br>
+        Collapse (acordeão de conteúdo)<br>
+        Modal (janela sobreposta)<br>
+    </p>
+    <!--Navbar-->
+    <nav class="navbar bg-warning">
+        <div class="container-fluid">
+        <a class="navbar-brand">Eventos Culturais</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Escreva algo..." aria-label="Search"/>
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--Destaque-->
+    <header class="text-center bg-success text-white py-5">
+        <div class="container">
+            <h1 class="fw-bold">Participe dos melhores eventos culturais!</h1>
+            <p>Shows, teatro, exposiões e muito mais, em um só lugar</p>
+
+        </div>
+    </header>
+    <!--Eventos-->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Próximos Eventos</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Show musical</h5>
+                            <p class="card-text">Uma noite inesquecivel com a banda mais animada da cidade.</p>
+                            <a href="#" class="btn btn-success">Quero ir</a>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Show musical</h5>
+                            <p class="card-text">Uma noite inesquecivel com a banda mais animada da cidade.</p>
+                            <a href="#" class="btn btn-success">Quero ir</a>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Show musical</h5>
+                            <p class="card-text">Uma noite inesquecivel com a banda mais animada da cidade.</p>
+                            <a href="#" class="btn btn-success">Quero ir</a>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Formulário de Inscrição-->
+    <section class="py-5 bg-white">
+        <div class="conteiner">
+          <h2 class="text-center fw-bold mb-5">Garanta sua vaga</h2>
+          <form action="">
+           <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome Completo</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <select type="email" id="form-select">
+                <option>Show Musical</option>
+                <option>Exposição</option>
+                <option>Teatro</option>
+            </select>
+            <button class="btn btn-success w-100">Inscrever-se</button>
+            </form>
+        </div> 
+    </section>
+    <footer class="bg-success text-white text-center py-5 mt-5">
+        <p>2842 Evento Cultural - Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <p>
+        Por que personalizar o bootstrap<br>
+        Motivações<br>
+        1)Identidade visual:
+        2)Originalidade
+        Personalização comuns:
+        Cores
+        Tamanhos de fontes
+        Espaçamentos
+        Bordas e sombras
+
+        Como?
+
+        1) Sobreescrever classes via css
+        exemplo:
+        .btn-primary{
+            background-color:#xxxxxx;
+            border-color: #yyyyyy;
+        }
+    </p>
+    <p>
+        Usar Variaveis do Bootstrap (SCSS)<br>
+        O bootstrap é escrito em SASS, o que permite personalizar editando variáveis antes da importação dos arquivos .scss<br>
+
+        Precisaria ter instalado o bootstrap via npm<br>
+        npm install bootstrap<br>
+        @import"../node_modules/bootstrap/scss/bootstrap";<br>
+
+        projeto-bootstrap/<br>
+        |-index.html<br>
+        |-estilos/<br>
+        | |-custom.scss<br>
+        |- node_modules/<br>
+        |-package.json<br>
+
+        //custom.scss
+        Faz a customização
+        Basta usar o 
+        @import"../node_modules/bootstrap/scss/bootstrap"; ai não precisa usar o cdn
+    </p>
+</body>
+</html>
