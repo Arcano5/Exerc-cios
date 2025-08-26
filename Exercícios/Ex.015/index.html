@@ -1,0 +1,131 @@
+<!doctype html>
+<html>  
+    <head>    
+        <meta charset="UTF-8" />    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+        <link href="/Exercícios/Ex.015/src/output.css" rel="stylesheet">
+     </head>  
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-amber-500 text-white">
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold">🐾 Pet&Style</h1>
+        <nav>
+          <ul class="flex gap-6 text-lg">
+            <li><a href="#hero" class="hover:underline">Início</a></li>
+            <li><a href="#produtos" class="hover:underline">Produtos</a></li>
+            <li><a href="#depoimentos" class="hover:underline">Depoimentos</a></li>
+            <li><a href="#contato" class="hover:underline">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="bg-gray-100 py-16">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
+        <div class="flex-1 text-center md:text-left">
+          <h2 class="text-4xl font-bold mb-4">Estilo e conforto para o seu pet</h2>
+          <p class="mb-6">Na Pet&Style você encontra caminhas, brinquedos e acessórios que unem qualidade e muito charme para seu melhor amigo.</p>
+          <a href="#produtos" class="bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition">Ver produtos</a>
+        </div>
+        <div class="flex-1">
+          <img src="imagens/Inocente.jpg" alt="Pet estiloso" class="rounded-2xl shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+<section id="produtos" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Produtos em Destaque</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <!-- Card -->
+      <div class="bg-gray-50 p-4 rounded-xl shadow hover:shadow-lg transition">
+        <div class="w-full h-48 overflow-hidden rounded-lg mb-4">
+          <img src="imagens/Frajola.jpg" alt="Caminha estilosa" 
+               class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-semibold text-lg">Caminha Luxo</h4>
+        <p class="text-sm text-gray-600">Conforto e elegância para o descanso do seu pet.</p>
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-xl shadow hover:shadow-lg transition">
+        <div class="w-full h-48 overflow-hidden rounded-lg mb-4">
+          <img src="imagens/Gato1.jpg" alt="Brinquedo pet" 
+               class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-semibold text-lg">Brinquedo Interativo</h4>
+        <p class="text-sm text-gray-600">Diversão e estímulo para o dia a dia do seu pet.</p>
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-xl shadow hover:shadow-lg transition">
+        <div class="w-full h-48 overflow-hidden rounded-lg mb-4">
+          <img src="imagens/Gato2.jpg" alt="Coleira pet" 
+               class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-semibold text-lg">Coleira Estilosa</h4>
+        <p class="text-sm text-gray-600">Segurança com muito charme.</p>
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-xl shadow hover:shadow-lg transition">
+        <div class="w-full h-48 overflow-hidden rounded-lg mb-4">
+          <img src="imagens/Caodormindo.jpg" alt="Roupa pet" 
+               class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-semibold text-lg">Roupinha Fashion</h4>
+        <p class="text-sm text-gray-600">Seu pet pronto para arrasar em qualquer ocasião.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-16 bg-gray-100">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-10">O que dizem nossos clientes</h3>
+        <div class="space-y-8">
+          <blockquote class="bg-white p-6 rounded-xl shadow">
+            <p>"A caminha da Pet&Style é perfeita, meu cachorro nunca dormiu tão bem!"</p>
+            <span class="block mt-2 font-semibold">— Marina, SP</span>
+          </blockquote>
+          <blockquote class="bg-white p-6 rounded-xl shadow">
+            <p>"Produtos lindos e de ótima qualidade, super recomendo!"</p>
+            <span class="block mt-2 font-semibold">— João, RJ</span>
+          </blockquote>
+          <blockquote class="bg-white p-6 rounded-xl shadow">
+            <p>"Atendimento incrível e entrega super rápida."</p>
+            <span class="block mt-2 font-semibold">— Luiza, MG</span>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-10">Entre em contato</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <p class="mb-2"><strong>Email:</strong> contato@petstyle.com</p>
+            <p class="mb-6"><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p>Estamos prontos para ajudar você e seu pet a terem mais estilo e conforto no dia a dia.</p>
+          </div>
+          <form class="space-y-4">
+            <input type="text" placeholder="Seu nome" class="w-full border rounded-lg p-3">
+            <input type="email" placeholder="Seu e-mail" class="w-full border rounded-lg p-3">
+            <textarea placeholder="Sua mensagem" class="w-full border rounded-lg p-3"></textarea>
+            <button type="submit" class="bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-500 text-white text-center p-4">
+      <p>© 2025 Pet&Style - Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

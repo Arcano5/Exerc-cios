@@ -1,0 +1,42 @@
+<!doctype html>
+<html>  
+    <head>    
+        <meta charset="UTF-8" />    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+        <link href="/Aulas/Aula015/src/output.css" rel="stylesheet">
+    </head>  
+    <body>    
+        <h1 class="text-3xl font-bold underline">      
+            Hello world!    
+        </h1>  
+        <button class="bg-cyan-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Clique Aqui</button>
+    
+        <p>
+            Responsividade com tailwind css <br>
+            Breakpoint  Prefixo Largura Mínima <br>
+            sm sm: >= 640px; <br>
+            md md: >= 768px;<br>
+            lg lg: >= 1024px;<br>
+            xl xl: >= 1280px;<br>
+            2xl 2xl: >= 1536px;<br>
+
+            sem prefixo: estilos aplicados a todos os tamanhos
+            com prefixo: aplica-se a partir daquele breakpoint
+        </p>
+        <div class="text-base sm:text-lg md:text-x1 lg:text-2x1">
+            Texto que cresce conforme o tamanho da tela
+        </div>
+        <div class="text-center md:text-left">
+            Alinhamento muda de centralizado para à esquierda em tela médias
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-gray-100 p-4">Coluna 1</div>
+            <div class="bg-gray-200 p-4">Coluna 2</div>
+            <div class="bg-gray-300 p-4">Coluna 3</div>
+        </div>
+        <p class="block md:hidden">Somente em telas pequenas</p>
+        <p class="hidden md:block">Somente em telas médias ou maiores</p>
+        <img class="w-full md:w-1/2" src="" alt="Imagem que se adapta ao tamanho da tela">
+        <button class="w-full md:w-auto px-4 py-2 bg-blue-500 text-white rounded">Botão responsivo</button>
+    </body>
+</html>

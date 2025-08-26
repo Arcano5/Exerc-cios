@@ -1,0 +1,19 @@
+/* remove fundo do container (antes tinha .logo { background: white; ... }) */
+.logo {
+  background: none;         /* sem caixa branca */
+  padding: 0;               /* sem espaço extra */
+  display: inline-block;
+  border-radius: 12px;      /* opcional, se quiser canto arredondado */
+}
+
+/* ajuste fino da imagem */
+.logo-img {
+  display: block;           /* remove gap em elementos inline */
+  width: 110px;             /* ajuste o tamanho desejado */
+  height: auto;
+  object-fit: contain;      /* mantém proporção */
+  background: transparent;  /* garante fundo transparente */
+}
+
+/* se a imagem ainda tiver bordas brancas remanescentes, remova com isto */
+.logo-img[style] { background: transparent; }
