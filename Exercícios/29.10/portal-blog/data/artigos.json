@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "viagem-no-tempo",
+    "titulo": "Viagem no Tempo: Entre a Ficção e a Física",
+    "autor": "Leonildo Gomes",
+    "data": "2025-10-29",
+    "descricao": "Um olhar sobre a possibilidade teórica e os paradoxos da viagem no tempo.",
+    "conteudo": "A viagem no tempo sempre fascinou a humanidade. Desde as obras de H.G. Wells até as discussões de Einstein, a ideia de mover-se entre passado e futuro continua sendo um tema de fascínio e especulação. Na física moderna, as equações da relatividade permitem cenários curiosos onde o tempo pode ser dilatado — mas o desafio está em transformar teoria em realidade."
+  },
+  {
+    "slug": "inteligencia-artificial",
+    "titulo": "Inteligência Artificial e o Futuro do Trabalho",
+    "autor": "Leonildo Gomes",
+    "data": "2025-10-15",
+    "descricao": "Como a IA está transformando o mercado de trabalho e a sociedade.",
+    "conteudo": "A inteligência artificial está moldando novas formas de produtividade, criatividade e até de decisão. No entanto, sua expansão traz desafios éticos e econômicos. Trabalhadores precisam se adaptar rapidamente, e o aprendizado contínuo se torna essencial para o futuro profissional."
+  },
+  {
+    "slug": "engenharia-sustentavel",
+    "titulo": "Engenharia Sustentável: O Caminho para um Futuro Verde",
+    "autor": "Leonildo Gomes",
+    "data": "2025-09-30",
+    "descricao": "Tecnologias e práticas sustentáveis que estão revolucionando a engenharia moderna.",
+    "conteudo": "Da energia solar à construção com materiais reciclados, a engenharia sustentável está transformando o modo como produzimos e consumimos. Este artigo explora exemplos reais de inovação que unem eficiência e responsabilidade ambiental."
+  },
+  {
+    "slug": "educacao-digital",
+    "titulo": "Educação Digital: O Poder do Aprendizado Online",
+    "autor": "Leonildo Gomes",
+    "data": "2025-09-10",
+    "descricao": "As plataformas digitais e o impacto da tecnologia na aprendizagem moderna.",
+    "conteudo": "Com o avanço das tecnologias educacionais, aprender nunca foi tão acessível. Plataformas de ensino online estão democratizando o conhecimento e permitindo o aprendizado personalizado — um novo paradigma na formação profissional e acadêmica."
+  }
+]

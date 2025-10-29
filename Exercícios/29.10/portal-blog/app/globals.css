@@ -1,0 +1,17 @@
+:root {
+  --accent-1: rgb(170, 12, 44);
+  --accent-2: #00ddaa;
+  --bg: #f8fafc;
+  --card: #fff;
+  --text: #0f172a;
+}
+
+html,body,#root { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+a { color: var(--accent-1); text-decoration: none; }
+a:hover { text-decoration: underline; }

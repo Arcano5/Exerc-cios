@@ -1,0 +1,56 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  color: #dc143c; /* Carmesim */
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.lista {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  display: block;
+  padding: 1.5rem;
+  border: 2px solid #dc143c;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #222;
+  background: #fff0f2;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  background: #dc143c;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0 0 0.5rem;
+  color: #444;
+}
+
+.card small {
+  font-size: 0.85rem;
+  color: #333;
+}
