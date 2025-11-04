@@ -16,22 +16,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function ArtigoPage({ params }: Props) {
-  const artigo = await getArtigoBySlug(params.slug);
 
-  if (!artigo) {
-    return <h2>Artigo não encontrado 😢</h2>;
-  }
+import { notFound } from 'next/navigation';
+import artigos from '@/data/artigos.json'; // caminho do seu JSON
+
+export async function generateStaticParams() {
+  return artigos.map((artigo) => ({
+    slug: artigo.slug,
+  }));
+}
+
+export const dynamic = 'force-static'; // 🔒 garante que será estático
+
+export default function ArtigoPage({ params }: { params: { slug: string } }) {
+  const artigo = artigos.find((a) => a.slug === params.slug);
+
+  if (!artigo) return notFound();
 
   return (
-    <article style={{ padding: "2rem", maxWidth: "800px", margin: "0 auto" }}>
-      <h1 style={{ color: "#DC143C" }}>{artigo.titulo}</h1>
-      <p>
-        <strong>{artigo.autor}</strong> — {new Date(artigo.data).toLocaleDateString()}
-      </p>
-      <p style={{ fontStyle: "italic", color: "#555" }}>{artigo.descricao}</p>
-      <hr style={{ margin: "1rem 0" }} />
-      <p style={{ lineHeight: "1.6" }}>{artigo.conteudo}</p>
-    </article>
+    <main className="p-6">
+      <h1 className="text-3xl font-bold">{artigo.titulo}</h1>
+      <p className="text-gray-600">{artigo.data}</p>
+      <div className="mt-4">{artigo.conteudo}</div>
+    </main>
   );
 }
+
