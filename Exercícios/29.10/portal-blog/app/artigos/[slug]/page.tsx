@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import artigos from "@/data/artigos.json"; // caminho do seu JSON
 
-// 🔹 Força renderização estática
 export const dynamic = "force-static";
 
-// 🔹 Gera rotas estáticas com base nos slugs
 export async function generateStaticParams() {
   const artigos = [
     { slug: "introducao-ao-nextjs" },
@@ -19,16 +17,17 @@ export async function generateStaticParams() {
   }));
 }
 
-// 🔹 Define o tipo de Props
-interface Props {
-  params: { slug: string };
-}
+// ✅ Compatível com Next 16 (usa Awaited<>)
+type PageProps = {
+  params: Promise<{ slug: string }>;
+};
 
 // 🔹 Gera metadados dinâmicos com base no slug
 export async function generateMetadata(
-  { params }: Props
+  { params }: Awaited<PageProps>
 ): Promise<Metadata> {
-  const artigo = await getArtigoBySlug(params.slug);
+  const resolvedParams = await params;
+  const artigo = await getArtigoBySlug(resolvedParams.slug);
   if (!artigo) {
     return { title: "Artigo não encontrado" };
   }
@@ -40,8 +39,9 @@ export async function generateMetadata(
 }
 
 // 🔹 Página do artigo
-export default function ArtigoPage({ params }: Props) {
-  const artigo = artigos.find((a) => a.slug === params.slug);
+export default async function ArtigoPage({ params }: Awaited<PageProps>) {
+  const resolvedParams = await params;
+  const artigo = artigos.find((a) => a.slug === resolvedParams.slug);
 
   if (!artigo) return notFound();
 
