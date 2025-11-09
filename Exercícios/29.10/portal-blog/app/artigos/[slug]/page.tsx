@@ -1,6 +1,26 @@
 import { getArtigoBySlug } from "@/lib/articles";
 import { Metadata } from "next";
 
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+  const artigos = [
+    {
+      slug: 'introducao-ao-nextjs',
+    },
+    {
+      slug: 'boas-praticas-de-seo',
+    },
+    {
+      slug: 'javascript-moderno',
+    },
+  ];
+
+  return artigos.map((artigo) => ({
+    slug: artigo.slug,
+  }));
+}
+
 interface Props {
   params: { slug: string };
 }
@@ -20,13 +40,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 import { notFound } from 'next/navigation';
 import artigos from '@/data/artigos.json'; // caminho do seu JSON
 
-export async function generateStaticParams() {
-  return artigos.map((artigo) => ({
-    slug: artigo.slug,
-  }));
-}
-
-export const dynamic = 'force-static'; // 🔒 garante que será estático
 
 export default function ArtigoPage({ params }: { params: { slug: string } }) {
   const artigo = artigos.find((a) => a.slug === params.slug);
