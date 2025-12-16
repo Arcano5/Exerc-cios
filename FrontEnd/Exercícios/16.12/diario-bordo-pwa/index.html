@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PWA CONFIG -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Para iOS -->
+    <link rel="apple-touch-icon" href="./icons/icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Diário">
+    
+    <!-- Para Windows -->
+    <meta name="msapplication-TileImage" content="./icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <!-- Para Android/Chrome -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Favicon geral -->
+    <link rel="icon" type="image/png" href="./icons/icon-96x96.png">
+    
+    <title>Diário de Bordo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Diário de Bordo</h1>
+        <button id="themeToggle" class="theme-toggle">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-text">Modo Escuro</span>
+        </button>
+    </div>
+    <div class="container">
+        <div id="app">
+            <!-- Conteúdo do aplicativo PWA -->
+            <form id="diarioForm">
+                <label for="entryTitulo">Título</label>
+                <input type="text" id="entryTitulo" required><br>
+                
+                <label for="entryDescricao">Descrição:</label><br>
+                <textarea id="entryDescricao" rows="4" cols="50" required></textarea><br>
+                
+                <label for="entryData">Data:</label>
+                <input type="date" id="entryData" required><br>
+                
+                <button type="submit" id="saveEntryBtn">Salvar Entrada</button>
+            </form>
+        </div>
+        <div id="container-historico">
+            <h2>Histórico de Entradas</h2>
+            <ul id="entryList">
+                <!-- Lista de entradas será preenchida aqui -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
